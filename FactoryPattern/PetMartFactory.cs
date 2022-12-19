@@ -12,20 +12,19 @@ namespace FactoryPattern
         {
             switch (petType.ToLower())
             {
-                case "Reptile":
+                case "reptile":
                     return new ReptileProducts();
 
-                case "Dog":
+                case "dog":
                     return new DogProducts();
 
-                case "Cat":
+                case "cat":
                     return new CatProducts();
-
                 default:
+                    Console.WriteLine("Unable to find that type, here is cat info:");
                     return new CatProducts();
             }
             
         }
-        
     }
 }
