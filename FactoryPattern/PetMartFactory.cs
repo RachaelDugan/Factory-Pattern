@@ -24,7 +24,7 @@ namespace FactoryPattern
                     Console.WriteLine("Unable to find that type, here is cat info:");
                     return new CatProducts();
             }
-            
+
         }
     }
 }
